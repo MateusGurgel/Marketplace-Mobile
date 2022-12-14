@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesome5 } from "@expo/vector-icons";
-import { Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import Responsive from "react-native-lightweight-responsive";
 import theme from "../../../global/style/theme";
 
