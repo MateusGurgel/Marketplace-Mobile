@@ -1,14 +1,18 @@
-import { NavigationContainer } from "@react-navigation/native";
-import { StyleSheet, View } from "react-native";
+import { NavigationContainer, ThemeProvider } from "@react-navigation/native";
+import { StyleSheet } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { AuthProvider } from "./src/context/auth";
 import { AppRoutes } from "./src/routes/routes";
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <NavigationContainer>
-        <AppRoutes />
+        <AuthProvider>
+          <AppRoutes/>
+        </AuthProvider>
       </NavigationContainer>
-    </View>
+    </SafeAreaView>
   );
 }
 
