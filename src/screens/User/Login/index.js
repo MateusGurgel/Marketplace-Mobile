@@ -9,7 +9,7 @@ import theme from "../../../global/style/theme";
 
 const Login = () => {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <Text style={styles.title}>Entrar</Text>
       <View style={styles.form}>
         <Text style={styles.inputTitle}>Email</Text>
@@ -33,7 +33,7 @@ const Login = () => {
           </View>
         </View>
       </View>
-    </SafeAreaView>
+    </View>
   );
 };
 

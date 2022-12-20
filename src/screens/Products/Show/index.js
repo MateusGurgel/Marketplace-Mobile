@@ -6,7 +6,7 @@ import { MyButton } from "../../../components/Form/MyButton";
 
 const Show = ({ product_name }) => {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <View style={styles.pictureContainer}>
         <View style={styles.picture}></View>
       </View>
@@ -27,7 +27,7 @@ const Show = ({ product_name }) => {
       </View>
 
       <MyButton title="Adicionar" />
-    </SafeAreaView>
+    </View>
   );
 };
 

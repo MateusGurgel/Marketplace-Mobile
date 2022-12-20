@@ -71,7 +71,7 @@ const orders = [
 
 const Orders = () => {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <FlatList
         data={orders}
         keyExtractor={(item) => item.productId}
@@ -94,7 +94,7 @@ const Orders = () => {
           </View>
         )}
       />
-    </SafeAreaView>
+    </View>
   );
 };
 

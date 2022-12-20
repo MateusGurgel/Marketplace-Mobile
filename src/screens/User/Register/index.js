@@ -1,14 +1,13 @@
 import React from "react";
 import { View, Text, Button, StyleSheet, TextInput } from "react-native";
 import Responsive from "react-native-lightweight-responsive";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { MyButton } from "../../../components/Form/MyButton";
 import { MyInput } from "../../../components/Form/MyInput";
 import theme from "../../../global/style/theme";
 
 const Register = () => {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <View style={styles.titleContainer}>
         <Text style={styles.title}>Preencha seus dados</Text>
       </View>
@@ -39,7 +38,7 @@ const Register = () => {
 
         <MyButton title="Salvar" />
       </View>
-    </SafeAreaView>
+    </View>
   );
 };
 
